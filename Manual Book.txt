@@ -1,0 +1,12 @@
+Nama : 	Betran Dwi Fadillah - 20312098 Backend, Frontend Admin
+	Dedy Adriansyah - 20312094 Frontend User
+
+Manual Book : 
+
+1. git clone https://github.com/betrandwifadillah11/Sultan-Helm.git
+
+2. import file database db_produk ke phpmyadmin (ada di folder database backend)
+
+3. jalankan php artisan serve di backend
+
+4. jalankan php artisan serve di Frontend Admin dan Frontend User
