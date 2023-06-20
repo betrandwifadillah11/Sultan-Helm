@@ -1,8 +1,4 @@
-Tampilan Tambah Data Produk
-![Screenshot 2023-06-20 151819](https://github.com/betrandwifadillah11/Sultan-Helm/assets/113273104/7f2588e5-3701-4cdf-90c4-fde8ffdac8d7)
 
-Tampilan Data yang di tambah
-![Screenshot 2023-06-20 151759](https://github.com/betrandwifadillah11/Sultan-Helm/assets/113273104/7774f988-b5e9-4e65-9a3c-ae6282dfcc9c)
 
 
 
