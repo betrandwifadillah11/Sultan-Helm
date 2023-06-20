@@ -22,3 +22,11 @@ use Illuminate\Support\Facades\Route;
 
 //buat root untuk tampil data
 Route::get("/",[Produk::class,'index']);
+
+//tambah data
+Route::get("/add",[Produk::class,'add']);
+
+//hapus data
+Route::delete("/delete/{parameter}",[Produk::class,'delete']);
+
+Route::post("/store", [Produk::class, 'index'])->name('produk.store');

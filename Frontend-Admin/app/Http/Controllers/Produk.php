@@ -34,4 +34,46 @@ class Produk extends Controller
         //panggil view "vw_karyawan"
         return view("vw_produk",$data);
     }
+
+    //tambah data
+    function add()
+    {
+        // tampilkan view "en_karwayan"
+        return view("vw_tambah");
+    }
+
+    //delete
+     //buat fungsi untuk hapus data karyawan
+    function delete($kode)
+    {
+        $parameter = base64_encode($kode);
+         //buat url (service "DELETE" dari server)
+         $url = env("API_URL")."delete/".$parameter;
+         //ambil service "DELETE" dari server
+        $request = $this->frontendadmin->delete($url);
+        //tampilkan hasil
+        $response = $request->getBody();
+        //kirim ke "vw_produk" (fetch)
+        echo $response;
+    }
+
+    function add_data($kode)
+    {
+        $parameter = base64_encode($kode);
+         //buat url (service "DELETE" dari server)
+         $url = env("API_URL")."add/".$parameter;
+         //ambil service "DELETE" dari server
+        $request = $this->frontendadmin->add_data($url);
+        //tampilkan hasil
+        $response = $request->getBody();
+        //kirim ke "vw_produk" (fetch)
+        echo $response;
+    }
+
+    public function store(Request $request)
+    {
+        
+        return redirect()->route('vw_produk');
+    }
+
 }

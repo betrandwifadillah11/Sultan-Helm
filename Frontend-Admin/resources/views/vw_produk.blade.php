@@ -39,7 +39,7 @@
                     <td class="pt-5 text-left">{{$output->merk_produk}}</td>
                     <td class="pt-5 text-left">{{$output->nama_produk}}</td>
                     <td class="pt-5 text-left">{{$output->jenis_produk}}</td>
-                    <td class="pt-5 text-left">{{$output->harga_produk}}</td>
+                    <td class="pt-5 text-left">Rp. {{$output->harga_produk}}</td>
                </tr>
           @endforeach
           </tbody>
@@ -56,21 +56,45 @@
     
     {{-- Custom JavaScript --}}
     <script>
+          // buat fungsi link untuk tambah data
           function gotoAdd()
           {
                location.href="{{url('/add')}}"
+
+               //windows.open("") gunakan ini untuk hal tertentu contohn=ya saat print
           }
+
+           // fungsi untuk refresh data (html ke js/dom js)
+          document.querySelector("#btn_refresh").addEventListener('click',function(){
+               location.href="{{url('/')}}"
+          })
 
           //buat fungsi untuk hapus data
           function gotoDelete(kode)
           {
+               //location.href="{{url('/delete')}}/"+kode
                if(confirm("Data "+kode+" Ingin Dihapus ?") == true)
+               {
+                         //buat variabel link
+                    const url = "{{url('/delete')}}/"+kode
+                    // asyncronous javascript (dengan fetch)
+                    fetch(url,{
+                         method : "DELETE",
+                         headers: {
+                         'X-CSRF-Token': document.querySelector('meta[name="_token"]').content
+                         }
+                    })
+                    //hasil response dari url
+                    .then((response) => response.json())
+                    // menampilkan hasil response (dari "then" sebelumnya)
+                    .then((output) => {
+                         alert(output.pesan)
+                         //panggil method dari btn_refresh
+                         document.querySelector("#btn_refresh").click()
+                    })
+                    .catch((error) => alert("Data Gagal Dikirim !"))
+               }
           }
-
-          //gunsi untuk refresh
-          document.querySelector("#btn_refresh").addEvenListener('click', function(){
-               location.href="{{url('/')}}"
-          })
     </script>
 
 </body>
