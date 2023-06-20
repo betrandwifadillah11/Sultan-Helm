@@ -252,7 +252,7 @@
         <div class="box text-center">
           <h1 class="font-extrabold text-4xl mb-8">About Us</h1>
           <p class="lg:w-3/4 w-full mx-auto md:text-base text-xs">
-            Toko helm Sultan helm merupakan toko helm yang menjual berbagai produk barang helm dari merek-merek helm terkenal. helm-helm yang dijual di toko ini merupakan helm original yang disuplyer dari official. harga dijamin tidak jauh dari harga official merek terkenal. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem praesentium facilis debitis quas distinctio consectetur accusamus dolorum nobis odit laudantium, a, pariatur accusantium quos itaque mollitia temporibus fugiat, nesciunt suscipit?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque perspiciatis magni temporibus voluptatum corporis exercitationem repellat expedita debitis provident id voluptatibus, tenetur omnis, assumenda, consequuntur quos accusamus nisi distinctio minima?.
+            Toko helm Sultan helm merupakan toko helm yang menjual berbagai produk barang helm dari merek-merek helm terkenal. helm-helm yang dijual di toko ini merupakan helm original yang disuplyer dari official. harga dijamin tidak jauh dari harga official merek terkenal. kami juga menyediakan servis helm seperti ganti kaca, perbaikan helm rusak atau ganti suku cadang helm. toko kami berada di daerah lampung selatan, natar sebelum flyover. Kami juga mengikuti kmunitas publick tentang helm-helm yang sering dinikmati dan ditawarkan oleh pengguna lain. Kami juga mengikuti giveaway dari perusahaan-perushaan official merk helm terkemuka .
           </p>
         </div>
       </div>
