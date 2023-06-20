@@ -10,3 +10,5 @@ Manual Book :
 3. jalankan php artisan serve di backend
 
 4. jalankan php artisan serve di Frontend Admin dan Frontend User
+
+catatan pastikan php tidak lebih dari php version 7.4
